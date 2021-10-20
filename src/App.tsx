@@ -6,6 +6,8 @@ import {
   NavLink,
 } from 'react-router-dom';
 
+import Menu from './components/menu';
+
 import AboutUs from './view/aboutUs';
 import ContactUs from './view/contactUs';
 import Home from './view/home';
@@ -34,7 +36,7 @@ const menuOptions = [
 const App = () => {
   return (
     <Router>
-      {/* menu */}
+      <Menu menuOptions={menuOptions}/>
       <Switch>
         {menuOptions.map((list: any, i: any) => (
           <Route key={i} exact path={list.link}>
