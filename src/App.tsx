@@ -1,10 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink,
 } from 'react-router-dom';
+import Footer from './components/footer';
+import Header from './components/header';
 
 import Menu from './components/menu';
 
@@ -37,6 +38,7 @@ const App = () => {
   return (
     <Router>
       <Menu menuOptions={menuOptions}/>
+      <Header/>
       <Switch>
         {menuOptions.map((list: any, i: any) => (
           <Route key={i} exact path={list.link}>
@@ -44,7 +46,7 @@ const App = () => {
           </Route>
         ))}
       </Switch>
-      {/* footer */}
+      <Footer/>
     </Router>
   );
 }
