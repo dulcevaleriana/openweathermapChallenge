@@ -1,21 +1,21 @@
 .class-home {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 40% 60%;
     padding: 0 84px;
 
     > div:first-child{
         position: relative;
 
         > div:last-child{
-            width: 50%;
+            width: 43%;
             position: absolute;
             right: 0;
-            top: 20vh;
+            top: 5vh;
             color: #0049A5;
 
             h1{
                 margin: 0;
-                font-size: 40pt;
+                font-size: 50pt;
                 justify-self: start;
                 display: flex;
 
@@ -40,20 +40,20 @@
         position: relative;
         z-index: -1;
 
-        > .class-cloud.class-cloud-big{
+        > .class-cloud.class-cloud-small:nth-child(3){
             margin: 0;
             position: absolute;
-            left: calc(100% - 250px);
+            left: calc(100% - 260px);
             z-index: 1;
-            top: 26vh;
+            top: 20vh;
         }
 
         .class-sun {
             position: absolute;
-            left: calc(50% - 100px);
+            left: calc(50% - 110px);
         }
 
-        > .class-cloud.class-cloud-small{
+        > .class-cloud.class-cloud-small:nth-child(1){
             margin: 0;
             position: absolute;
             left: 0;
