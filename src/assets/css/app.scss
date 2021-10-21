@@ -7,12 +7,12 @@ body{
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 
     div#root {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 50px 30px calc(100vh - 284px - 80px);
+        grid-template-rows: 50px 30px calc(100vh - 130px - 80px) 130px;
     }
-    
 }
 

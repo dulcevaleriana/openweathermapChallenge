@@ -1,0 +1,88 @@
+.class-footer {
+    position: relative;
+
+    .class-sand-blue{
+        width: calc(100vw + 5px);
+        height: 100px;
+        border-radius: 50% 0%/50% 100%;
+        background: #4C9CFE;
+        transform: rotate(3deg);
+        position: absolute;
+        bottom: -24px;
+        left: -5px;
+        z-index: 2;
+   }
+
+   .class-sand-light-blue {
+        width: calc(100vw + 5px);
+        height: 100px;
+        border-radius: 0% 50%/1000% 50%;
+        background: #7CB9FE;
+        transform: rotate(-3deg);
+        position: absolute;
+        bottom: -35px;
+        right: -5px;
+        z-index: 0;
+    }
+
+    .class-mountain{
+        background: #7cb9fe;
+        transform: rotate(45deg);
+        border-radius: 25px;
+        border: 5px solid #b2e1fe;
+        position: absolute;
+        top: -15px;
+    }
+
+    .class-big-mountain {
+        width: 200px;
+        height: 200px;
+    }
+
+    .class-small-mountain {
+        width: 100px;
+        height: 100px;
+    }
+
+    .class-mountain:nth-child(3){
+        left: 100px;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .class-mountain:nth-child(4){
+        left: 200px;
+        z-index: 1;
+    }
+
+    .class-mountain:nth-child(5){
+        right: 84px;
+        top: 10px;
+    }
+
+    .class-mountain:nth-child(6){
+        left: 390px;
+        top: 20px;
+    }
+
+    .class-mountain:nth-child(7){
+        right: 235px;
+        top: 20px;
+    }
+
+    > div:last-child  {
+        position: absolute;
+        background: #2E89FF;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 10px 84px;
+        text-align: right;
+        color: white;
+        z-index: 2;
+
+        > h6 {
+            margin: 0;
+        }
+    }
+}
