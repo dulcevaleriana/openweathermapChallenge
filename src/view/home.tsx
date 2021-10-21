@@ -4,6 +4,7 @@ import {ScaleLoader} from 'react-spinners';
 import SunAnimated from '../components/sunAnimated';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import Card from '../components/card';
 
 const Home = () => {
     const [weatherdata, setWeatherdata] = useState<any | null>(null);
@@ -33,12 +34,14 @@ const Home = () => {
     return(
         <div className="class-home">
           <div>
-            <SunAnimated/>
-            <div>
-              <h1>28<span>oC</span></h1>
-              <h5><strong>Colombia | CU</strong></h5>
-              <h5>Clouds: Broken clouds </h5>
-            </div>
+          <SunAnimated/>
+          {weatherdata && (
+              <div>
+                <h1>28<span>oC</span></h1>
+                <h5><strong>{weatherdata.name} | {weatherdata.sys.country}</strong></h5>
+                <h5>{weatherdata.weather[0].main}: {weatherdata.weather[0].description}</h5>
+              </div>
+          )}
           </div>
           <div>
             <input onChange={(a) => setCity(a.target.value)} type="text" placeholder="Write what weather country do you want to know"/>
@@ -54,17 +57,60 @@ const Home = () => {
             ) : (
               <>
                 {weatherdata ? (
-                  <>
+                  <div>
                     {/* <img src={`http://openweathermap.org/img/w/${weatherdata.weather[0].icon}.png`} alt="icon" /> */}
-                    <p>{weatherdata.main.temp}</p>
-                    <p>{weatherdata.main.temp_max}</p>
-                    <p>{weatherdata.main.temp_min}</p>
-                    <p>{weatherdata.main.temp}</p>
-                    <p>{weatherdata.weather[0].main}</p>
-                    <p>{weatherdata.weather[0].description}</p>
-                    <p>{weatherdata.name}</p>
-                    <p>{weatherdata.sys.country}</p>
-                  </>
+                    <Card 
+                      title="General"
+                      mapData={[
+                        {
+                          name:"humidity:",
+                          value: weatherdata.main.humidity
+                        },
+                        {
+                          name:"pressure:",
+                          value: weatherdata.main.pressure
+                        },
+                        {
+                          name:"level:",
+                          value: weatherdata.main.sea_level
+                        }
+                      ]}
+                    />
+                    <Card 
+                      title="Temp"
+                      mapData={[
+                        {
+                          name:"Temp:",
+                          value: weatherdata.main.temp
+                        },
+                        {
+                          name:"Max Temp:",
+                          value: weatherdata.main.temp_max
+                        },
+                        {
+                          name:"Min Temp:",
+                          value: weatherdata.main.temp_min
+                        }
+                      ]}
+                    />
+                    <Card 
+                      title="Wind"
+                      mapData={[
+                        {
+                          name:"Deg:",
+                          value: weatherdata.wind.deg
+                        },
+                        {
+                          name:"Gust:",
+                          value: weatherdata.wind.gust
+                        },
+                        {
+                          name:"Speed:",
+                          value: weatherdata.wind.speed
+                        }
+                      ]}
+                    />
+                  </div>
                   ) : null}
               </>
             )}

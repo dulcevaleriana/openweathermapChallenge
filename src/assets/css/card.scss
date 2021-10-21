@@ -1,0 +1,21 @@
+
+    .class-Card {
+        background: linear-gradient(160deg, #f2faff 0%, #B2E1FE 50%);
+        padding: 20px;
+        display: grid;
+        grid-column: 1/span 2;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        height: 80px;
+        border-radius: 25px;
+        color: #4c9cfe;
+        box-shadow: 0px 0px 10px 2px #66a7fd69;
+
+        h3 {
+            grid-column: 1 / span 3;
+        }
+
+        h3, p{
+            margin: 0;
+        }
+    }

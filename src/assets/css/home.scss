@@ -65,7 +65,16 @@
     > div:last-child{
         display: grid;
         grid-template-columns: calc(80% - 5px) calc(20% - 5px);
-        grid-template-rows: 50px calc(100% - 60px);
+        grid-template-rows: 50px auto;
         grid-gap: 10px;
+
+        > div:last-child{
+            display: grid;
+            grid-column: 1 / span 2;
+            grid-gap: 10px;
+            overflow-y: auto;
+            height: calc(100% - 60px);
+            padding-right: 10px;
+        }
     }
 }
