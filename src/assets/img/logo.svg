@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="198" height="78" viewBox="0 0 198 78">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_26" data-name="Rectangle 26" width="198" height="78" transform="translate(76 -229)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-76 229)" clip-path="url(#clip-path)">
+    <g id="Group_20" data-name="Group 20" transform="translate(1.02 -213)">
+      <path id="Intersection_1" data-name="Intersection 1" d="M76.627,78a25.286,25.286,0,1,0-37.5,0H8.3L20.071,61.042,7.523,42.782a2.907,2.907,0,0,1,1.952-4.53L31.14,34.338l3.731-21.665a3.032,3.032,0,0,1,4.712-1.952l18.26,12.548L75.925,10.544A3.032,3.032,0,0,1,80.638,12.5l3.914,21.658,21.657,3.914a3.032,3.032,0,0,1,1.952,4.712L95.614,60.863,107.4,78ZM49.553,78a19.367,19.367,0,0,1-10.6-17.317,18.883,18.883,0,0,1,18.9-18.895c10.53,0,18.895,8.9,18.895,19.253A18.817,18.817,0,0,1,66.276,78Z" transform="translate(76 -17)" fill="#65a7fd"/>
+      <text id="OWPC" transform="translate(115 61)" fill="#0049a5" font-size="50" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">OWPC</tspan></text>
+    </g>
+  </g>
+</svg>

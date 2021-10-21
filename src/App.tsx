@@ -13,23 +13,28 @@ import AboutUs from './view/aboutUs';
 import ContactUs from './view/contactUs';
 import Home from './view/home';
 
+import './assets/css/app.scss';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+
 const menuOptions = [
   {
     link: '/',
     name: 'Home',
-    // icon: faHouseUser,
+    icon: faHouse,
     page: <Home />
   },
   {
     link: '/AboutUs',
     name: 'About Us',
-    // icon: faHouseUser,
+    icon: faSun,
     page: <AboutUs />
   },
   {
     link: '/contactUs',
     name: 'Contact Us',
-    // icon: faHouseUser,
+    icon: faPaperPlane,
     page: <ContactUs />
   }
 ]

@@ -13,6 +13,7 @@ const Home = () => {
         let data = await getWeatherData(city);
         setWeatherdata(data);
         setLoading(false);
+        console.log(data);
       }catch(error){
         let errorMessage = "Some mistake was happend, please try again";
         if (error instanceof Error) {
@@ -23,7 +24,7 @@ const Home = () => {
     }
   
     useEffect(() => {
-      getData();
+      getData();// eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
     return(
