@@ -1,0 +1,63 @@
+body{
+    background-image: $gradient-blue;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    div#root {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50px 30px calc(100vh - 130px - 80px) 130px;
+    }
+
+    input {
+        background: #f0f9ff;
+        border: none;
+        padding: 0 20px;
+        border-radius: 1000px 0 0 1000px;
+        color: #4c9cfe;
+    }
+
+    button {
+        background: #2e89ff;
+        border: none;
+        border-radius: 0 1000px 1000px 0;
+        color: white;
+    }
+}
+
+
+::placeholder {
+    color: $color-light-blue;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: $color-light-blue;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: $color-light-blue;
+  }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $color-light-blue;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-blue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color-blue-select;
+}
