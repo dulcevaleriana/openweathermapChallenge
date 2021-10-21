@@ -18,5 +18,20 @@ body{
         grid-template-columns: auto;
         grid-template-rows: 50px 30px calc(100vh - 130px - 80px) 130px;
     }
+
+    input {
+        background: #f0f9ff;
+        border: none;
+        padding: 0 20px;
+        border-radius: 1000px 0 0 1000px;
+        color: #4c9cfe;
+    }
+
+    button {
+        background: #2e89ff;
+        border: none;
+        border-radius: 0 1000px 1000px 0;
+        color: white;
+    }
 }
 

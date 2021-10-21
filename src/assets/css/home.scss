@@ -61,4 +61,11 @@
             z-index: -1;
         }
     }
+
+    > div:last-child{
+        display: grid;
+        grid-template-columns: calc(80% - 5px) calc(20% - 5px);
+        grid-template-rows: 50px calc(100% - 60px);
+        grid-gap: 10px;
+    }
 }
