@@ -1,0 +1,13 @@
+$color-white: #FFF;
+$color-blue: #65A7FD;
+$color-light-blue: #B2E1FE;
+$color-blue-select: #2E89FF;
+$color-blue-transparent: #b2e1fe82;
+$color-yellow: #FBFA74;
+$color-yellow-dark: #FECF58;
+
+$gradient-blue: linear-gradient(180deg, #65A7FD 0%, #B2E1FE 50%);
+$gradient-yellow: linear-gradient(70deg, $color-yellow 0%, $color-yellow-dark 100%);
+$gradient-white:linear-gradient(160deg, #f2faff 0%, $color-light-blue 50%);
+
+$box-shadow: 0px 0px 10px 2px #66a7fd69;

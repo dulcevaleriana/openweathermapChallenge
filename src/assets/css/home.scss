@@ -1,0 +1,113 @@
+.class-home {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 0 84px;
+
+    > div:first-child{
+        position: relative;
+
+        > div:last-child{
+            width: 43%;
+            position: absolute;
+            right: 0;
+            top: 5vh;
+            color: #0049A5;
+
+            h1{
+                margin: 0;
+                font-size: 50pt;
+                justify-self: start;
+                display: flex;
+
+                span  {
+                    font-size: 15pt;
+                    margin-top: 10px;
+                }
+            }
+
+            h5:nth-child(2) {
+                margin: 0;
+            }
+
+            h5:last-child  {
+                margin: 5px 0;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .class-SunAnimated {
+        position: relative;
+        z-index: -1;
+
+        > .class-cloud.class-cloud-small:nth-child(3){
+            margin: 0;
+            position: absolute;
+            left: calc(100% - 260px);
+            z-index: 1;
+            top: 20vh;
+        }
+
+        .class-sun {
+            position: absolute;
+            left: calc(50% - 110px);
+        }
+
+        > .class-cloud.class-cloud-small:nth-child(1){
+            margin: 0;
+            position: absolute;
+            left: 0;
+            top: 10vh;
+            z-index: -1;
+        }
+    }
+
+    > div:last-child{
+        display: grid;
+        grid-template-columns: calc(80% - 5px) calc(20% - 5px);
+        grid-template-rows: 50px auto;
+        grid-gap: 10px;
+
+        > div:last-child{
+            display: grid;
+            grid-column: 1/span 2;
+            grid-gap: 10px;
+            overflow-y: auto;
+            height: calc(100% - 60px);
+            grid-template-columns: calc(33% - 5px) calc(33% - 5px) calc(33% - 5px);
+        }
+    }
+
+    .class-sun.class-sunDown {
+        position: absolute;
+        top: 50vh;
+        background-image: linear-gradient(70deg, #78b5fd 0%, #b2e1fe 100%);
+    }
+
+    .class-cloud.class-cloud-small.class-cloudDown {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .class-cloud.class-cloud-small:nth-child(1).class-cloudDown{
+        left: 6vw !important;
+    }
+
+    .class-cloud.class-cloud-small:nth-child(3).class-cloudDown{
+        left: -6vw !important;
+    }
+
+    .class-wellcomeMessage {
+        display: flex !important;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100% !important;
+        color: #4c9cfe;
+
+        svg.svg-inline--fa.fa-arrow-up {
+            font-size: 50pt;
+        }
+    }
+}

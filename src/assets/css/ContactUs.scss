@@ -1,0 +1,55 @@
+.class-ContactUs {
+    display: grid;
+    grid-template-columns: calc(40% - 5px) calc(60% - 5px);
+    padding: 0 84px;
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+
+    h1  {
+        grid-column: 1 / span 2;
+        margin: 0;
+        color: #014aa6;
+        font-size: 20pt;
+    }
+
+    form {
+        display: grid;
+        grid-template-rows: 50px 50px calc(100% - 120px);
+        grid-gap: 10px;
+
+        input {
+            border-radius: 0 1000px 1000px 0;
+        }
+
+        > div:last-child {
+            display: grid;
+            background: #f0f9ff;
+            grid-template-rows: auto 50px;
+            border-radius: 0 25px 25px 0;
+
+            textarea {
+                border: none;
+                background: transparent;
+                padding: 20px;
+            }
+
+            button {
+                width: 130px;
+                justify-self: end;
+                border-radius: 25px 0 25px 25px;
+            }
+        }
+    }
+
+    .class-sun {
+        float: right;
+    }
+
+    .class-cloud.class-cloud-small:nth-child(3) {
+        position: absolute;
+        right: 0;
+        margin: 0;
+        left: calc(100% - 85px);
+        top: 25vh;
+    }
+}

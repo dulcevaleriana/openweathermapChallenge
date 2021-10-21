@@ -1,0 +1,42 @@
+.class-menu {
+    background: $color-blue-transparent;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 84px;
+    box-shadow: $box-shadow;
+
+    img {
+        height: 50px;
+        width: auto;
+    }
+
+    ul {
+        grid-template-columns: auto auto auto;
+        display: grid;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style: none;
+            
+            svg{
+                color: $color-blue;
+                margin-right: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 10pt;
+                color: $color-blue;
+            }
+
+            a.active,
+            a.active svg {
+                color: $color-blue-select;
+            }
+        }
+    }
+}

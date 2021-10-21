@@ -1,0 +1,77 @@
+.class-SunAnimated{
+    position: relative;
+
+    .class-sun {
+        background: $color-yellow;
+        background-image: $gradient-yellow;
+        width: 150px;
+        height: 150px;
+        border-radius: 1000px;
+    }
+
+    .class-cloud {
+        background: $color-light-blue;
+        background: $gradient-white;
+        top: 50px;
+        left: 50px;
+        border-radius: 100px;
+        position: absolute;
+        margin: 0;
+        box-shadow: $box-shadow;
+    }
+
+    .class-cloud:after {
+        border-radius: 100px;
+    }
+    
+    .class-cloud:before {
+        border-radius: 200px;
+    }
+
+    .class-cloud:after, 
+    .class-cloud:before {
+        content: "";
+        position: absolute;
+        background: $color-white;
+        background-image: $gradient-white;
+        z-index: 0;
+    }
+
+    .class-cloud-big{
+        width: 250px;
+        height: 80px;
+    }
+
+    .class-cloud-big:after {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        left: 30px;
+    }
+
+    .class-cloud-big:before {
+        width: 120px;
+        height: 120px;
+        top: -75px;
+        right: 30px;
+    }
+
+    .class-cloud-small{
+        width: 175px;
+        height: 60px;
+    }
+
+    .class-cloud-small:before {
+        width: 80px;
+        height: 80px;
+        top: -45px;
+        right: 25px;
+    }
+
+    .class-cloud-small:after {
+        width: 80px;
+        height: 80px;
+        top: -36px;
+        left: 25px;
+    }
+}
