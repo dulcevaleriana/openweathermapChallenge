@@ -1,9 +1,18 @@
 @import 'variable.scss';
 @import 'menu.scss';
+@import 'footer.scss';
+
 body{
     background-image: $gradient-blue;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+
+    div#root {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50px 30px calc(100vh - 284px - 80px);
+    }
+    
 }
 
