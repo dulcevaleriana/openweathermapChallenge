@@ -1,0 +1,31 @@
+/*Web*/
+@media only screen and (min-width: 992px) {
+
+}
+
+/*Tablet*/
+@media only screen and (max-width: 992px),(width: 1024px) and (height: 1366px) {
+
+}
+
+/*Tablet 2*/
+@media only screen and (width: 1024px) and (height: 1366px) {
+
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 700px) {
+
+}
+
+/*Mini Smartphone*/
+@media only screen and (max-width: 380px) {
+
+}
+
+/*safari style MAC IPHONE IOS*/
+@supports (-webkit-hyphens:none){
+    @media only screen and (max-width: 992px) {
+
+    }
+}
