@@ -1,66 +1,73 @@
 .class-SunAnimated{
 
-    .cloud {
-        background: #b2e1fe;
-        background: linear-gradient(top, #BFF 5%, #DFF 100%);
-        background: -o-linear-gradient(top, #BFF 5%, #DFF 100%);
+    .class-sun {
+        background: $color-yellow;
+        background-image: $gradient-yellow;
+        width: 200px;
+        height: 200px;
+        border-radius: 1000px;
+    }
+
+    .class-cloud {
+        background: $color-light-blue;
+        background: $gradient-white;
         top: 50px;
         left: 50px;
         border-radius: 100px;
         position: absolute;
         margin: 120px auto 20px;
-        box-shadow: 0px 0px 10px 2px #66a7fd69;
+        box-shadow: $box-shadow;
     }
 
-    .cloud:after {
+    .class-cloud:after {
         border-radius: 100px;
     }
     
-    .cloud:before {
+    .class-cloud:before {
         border-radius: 200px;
     }
 
-    .cloud:after, 
-    .cloud:before {
+    .class-cloud:after, 
+    .class-cloud:before {
         content: "";
         position: absolute;
-        background: #FFF;
-        background-image: linear-gradient(160deg, #f2faff 0%, #B2E1FE 50%);
+        background: $color-white;
+        background-image: $gradient-white;
         z-index: 0;
     }
 
-    .cloud-big{
-        width: 350px;
-        height: 120px;
+    .class-cloud-big{
+        width: 250px;
+        height: 80px;
     }
 
-    .cloud-big:after {
-        width: 100px; 
+    .class-cloud-big:after {
+        width: 100px;
         height: 100px;
-        top: -50px; 
-        left: 50px;
+        top: -50px;
+        left: 30px;
     }
 
-    .cloud-big:before {
-        width: 200px; 
-        height: 200px;
-        top: -90px; 
-        right: 50px;
+    .class-cloud-big:before {
+        width: 120px;
+        height: 120px;
+        top: -75px;
+        right: 30px;
     }
 
-    .cloud-small{
+    .class-cloud-small{
         width: 175px;
         height: 60px;
     }
 
-    .cloud-small:before {
+    .class-cloud-small:before {
         width: 80px;
         height: 80px;
         top: -45px;
         right: 25px;
     }
 
-    .cloud-small:after {
+    .class-cloud-small:after {
         width: 80px;
         height: 80px;
         top: -36px;

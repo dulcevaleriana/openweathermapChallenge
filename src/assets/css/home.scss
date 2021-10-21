@@ -1,0 +1,64 @@
+.class-home {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 0 84px;
+
+    > div:first-child{
+        position: relative;
+
+        > div:last-child{
+            width: 50%;
+            position: absolute;
+            right: 0;
+            top: 20vh;
+            color: #0049A5;
+
+            h1{
+                margin: 0;
+                font-size: 40pt;
+                justify-self: start;
+                display: flex;
+
+                span  {
+                    font-size: 15pt;
+                    margin-top: 10px;
+                }
+            }
+
+            h5:nth-child(2) {
+                margin: 0;
+            }
+
+            h5:last-child  {
+                margin: 5px 0;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .class-SunAnimated {
+        position: relative;
+        z-index: -1;
+
+        > .class-cloud.class-cloud-big{
+            margin: 0;
+            position: absolute;
+            left: calc(100% - 250px);
+            z-index: 1;
+            top: 26vh;
+        }
+
+        .class-sun {
+            position: absolute;
+            left: calc(50% - 100px);
+        }
+
+        > .class-cloud.class-cloud-small{
+            margin: 0;
+            position: absolute;
+            left: 0;
+            top: 10vh;
+            z-index: -1;
+        }
+    }
+}

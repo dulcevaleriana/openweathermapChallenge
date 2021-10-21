@@ -30,32 +30,41 @@ const Home = () => {
 
     return(
         <div className="class-home">
-          <SunAnimated/>
-        <input onChange={(a) => setCity(a.target.value)} type="text" placeholder="Write what weather country do you want to know"/>
-        <button onClick={getData} type="button">search</button>
-        {loading ? (
-          <ScaleLoader
-            // css={}
-            loading={loading}
-            color={'#000'}
-          />
-        ) : (
-          <>
-            {weatherdata ? (
+          <div>
+            <SunAnimated/>
+            <div>
+              <h1>28<span>oC</span></h1>
+              <h5><strong>Colombia | CU</strong></h5>
+              <h5>Clouds: Broken clouds </h5>
+            </div>
+          </div>
+          <div>
+            <input onChange={(a) => setCity(a.target.value)} type="text" placeholder="Write what weather country do you want to know"/>
+            <button onClick={getData} type="button">search</button>
+            {loading ? (
+              <ScaleLoader
+                // css={}
+                loading={loading}
+                color={'#000'}
+              />
+            ) : (
               <>
-                <img src={`http://openweathermap.org/img/w/${weatherdata.weather[0].icon}.png`} alt="icon" />
-                <p>{weatherdata.main.temp}</p>
-                <p>{weatherdata.main.temp_max}</p>
-                <p>{weatherdata.main.temp_min}</p>
-                <p>{weatherdata.main.temp}</p>
-                <p>{weatherdata.weather[0].main}</p>
-                <p>{weatherdata.weather[0].description}</p>
-                <p>{weatherdata.name}</p>
-                <p>{weatherdata.sys.country}</p>
+                {weatherdata ? (
+                  <>
+                    <img src={`http://openweathermap.org/img/w/${weatherdata.weather[0].icon}.png`} alt="icon" />
+                    <p>{weatherdata.main.temp}</p>
+                    <p>{weatherdata.main.temp_max}</p>
+                    <p>{weatherdata.main.temp_min}</p>
+                    <p>{weatherdata.main.temp}</p>
+                    <p>{weatherdata.weather[0].main}</p>
+                    <p>{weatherdata.weather[0].description}</p>
+                    <p>{weatherdata.name}</p>
+                    <p>{weatherdata.sys.country}</p>
+                  </>
+                  ) : null}
               </>
-              ) : null}
-          </>
-        )}
+            )}
+          </div>
       </div>
     )
 }
