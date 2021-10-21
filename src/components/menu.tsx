@@ -6,12 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Menu = (props:any) => {
     const menuOptions = props.menuOptions;
     return(
-        <div>
+        <div className="class-menu">
             <img src={IMG_LOGO} alt="IMG_LOGO"/>
             <ul>
                 {menuOptions.map((list:any,i:any) => 
                     <li key={i} >
-                        <FontAwesomeIcon icon={list.icon} /> <NavLink to={list.link}>{list.name}</NavLink>
+                        <NavLink to={list.link} exact={true}><FontAwesomeIcon icon={list.icon} />{list.name}</NavLink>
                     </li>
                 )}
             </ul>
