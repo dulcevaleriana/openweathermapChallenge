@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {getWeatherData} from '../dataWeather/getWeatherData';
 import {ScaleLoader} from 'react-spinners';
+import SunAnimated from '../components/sunAnimated';
 
 const Home = () => {
     const [weatherdata, setWeatherdata] = useState<any | null>(null);
@@ -29,6 +30,7 @@ const Home = () => {
 
     return(
         <div className="class-home">
+          <SunAnimated/>
         <input onChange={(a) => setCity(a.target.value)} type="text" placeholder="Write what weather country do you want to know"/>
         <button onClick={getData} type="button">search</button>
         {loading ? (
