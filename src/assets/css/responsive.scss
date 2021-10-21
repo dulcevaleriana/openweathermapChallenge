@@ -5,7 +5,31 @@
 
 /*Tablet*/
 @media only screen and (max-width: 992px),(width: 1024px) and (height: 1366px) {
+    .class-ContactUs{
+        grid-template-columns: calc(60% - 5px) calc(40% - 5px);
+    }
 
+    .class-home > div:last-child > div:last-child {
+        grid-template-columns: auto;
+    }
+
+    .class-Card {
+        grid-template-columns: auto auto auto;
+        height: 70px;
+    }
+
+    .class-Card h3{
+        grid-column: 1 / span 3;
+    }
+
+    .class-home > div:last-child > div:last-child{
+        height: 100%;
+        padding-right: 5px;
+    }
+
+    .class-home > div:first-child > div:last-child {
+        width: 60%;
+    }
 }
 
 /*Tablet 2*/
