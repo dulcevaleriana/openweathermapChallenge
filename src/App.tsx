@@ -2,7 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
+  Route
 } from 'react-router-dom';
 import Footer from './components/footer';
 import Header from './components/header';
@@ -43,10 +43,14 @@ const App = () => {
   return (
     <Router>
       <Menu menuOptions={menuOptions}/>
-      <Header/>
       <Switch>
         {menuOptions.map((list: any, i: any) => (
           <Route key={i} exact path={list.link}>
+            <Header 
+              namePage={list.name} 
+              link={list.link}
+              icon={list.icon}
+            />
             {list.page}
           </Route>
         ))}
