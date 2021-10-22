@@ -160,9 +160,23 @@
 }
 
 /*Smartphone*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     .class-AboutUs{
         grid-template-rows: 80px auto;
+    }
+}
+
+@media only screen and (max-width: 540px) and (max-height: 720px){
+    .class-home > div:nth-child(2) > div:last-child {
+        top: -8vh;
+        display: grid;
+        grid-template-columns: 109px auto;
+        grid-gap: 0 10px;
+        text-align: left;
+    }
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        grid-row: 1/span 2;
+        font-size: 40pt;
     }
 }
 
@@ -178,13 +192,10 @@
         padding: 0 20px;
     }
     .class-footer > div:last-child{
-        padding: 20px;
+        padding: 10px 20px;
     }
     body div#root {
-        grid-template-rows: 70px 50px calc(100vh - 130px - 120px) 130px;
-    }
-    .class-Header {
-        font-size: 18pt;
+        grid-template-rows: 70px 50px calc(100vh - 130px - 90px) 99px;
     }
     .class-home > div:first-child {
         grid-template-columns: auto;
@@ -208,7 +219,7 @@
     .class-home > div:last-child {
         margin-right: -20px;
         padding-right: 20px;
-        height: 44vh;
+        height: 40vh;
         align-self: flex-start;
         z-index: 3;
         overflow-y: auto;
@@ -253,11 +264,26 @@
         top: 5vh;
         left: 55vw;
     }
+    .class-ContactUs form > div:last-child button {
+        width: 50px;
+    }
+    .class-ContactUs form > div:last-child button span{
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 400px) {
-    .class-Header {
+@media only screen and (max-width: 415px) {
+    .class-home {
+        grid-template-rows: 50px calc(50% - 50px) calc(64% - 50px);
+    }
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        font-size: 50pt;
+    }
+    .class-home > div:nth-child(2) > div:last-child h5 {
         font-size: 15pt;
+    }
+    .class-Header {
+        font-size: 12pt;
     }
     ul.class-menu-smartphone {
         right: 20vw;
@@ -272,14 +298,17 @@
     .class-Card h3 {
         grid-column: 1 / span 2;
     }
+    .class-ContactUs h1 {
+        font-size: 17pt;
+    }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 360px) {
     .class-home > div:nth-child(2) > div:last-child h1 {
-        font-size: 65pt;
+        font-size: 55pt;
     }
     .class-home > div:nth-child(2) > div:last-child h5 {
-        font-size: 18pt;
+        font-size: 15pt;
     }
     .class-footer > div:last-child {
         padding: 10px 20px;
@@ -299,6 +328,25 @@
     }
     .class-ContactUs h1 {
         font-size: 14.5pt;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .class-wellcomeMessage {
+        overflow-y: hidden !important;
+    }
+    .class-wellcomeMessage h2{
+        font-size: 15pt;
+    }
+    .class-home > div:nth-child(2) > div:last-child {
+        top: -8vh;
+        display: grid;
+        grid-template-columns: 109px auto;
+        grid-gap: 0 10px;
+        text-align: left;
+    }
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        grid-row: 1 / span 2;
     }
 }
 
