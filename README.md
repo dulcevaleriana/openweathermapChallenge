@@ -4,25 +4,18 @@ It about find the weather of any country around the world using api.openweatherm
 
 if you clone this repo well, you can see the final view like this:
 
-![Home](https://user-images.githubusercontent.com/39066351/138397551-975181b3-a66f-455e-a360-d00df85a3d65.png)
+![Home](https://user-images.githubusercontent.com/39066351/138397966-b7990fce-4a28-4b90-9902-a01cafea2a6b.png)
 
-![Home – 1](https://user-images.githubusercontent.com/39066351/138397554-94dbcb78-8e91-46a2-a68c-f749fbf88151.png)
+![Home – 1](https://user-images.githubusercontent.com/39066351/138397972-19f9867a-a264-4e4e-a502-7d055a1811c9.png)
 
-![Home – 2](https://user-images.githubusercontent.com/39066351/138397562-fcafd8b3-a06e-4bfe-87e2-4638d36f5a44.png)
+![Home – 2](https://user-images.githubusercontent.com/39066351/138397979-73e85ba5-e108-4982-925f-bf75ffdf9514.png)
 
-![iPad, Nexus 9 – 1](https://user-images.githubusercontent.com/39066351/138397576-849bcfb5-42a7-41ed-b297-96f65b986a41.png)
+![image](https://user-images.githubusercontent.com/39066351/138397948-95dc2d2d-0152-419f-9a47-2adebd08c209.png)
 
-![iPad, Nexus 9 – 2](https://user-images.githubusercontent.com/39066351/138397577-88c1197b-5ce4-4326-b0b7-aa4be3151e75.png)
+![image](https://user-images.githubusercontent.com/39066351/138398051-8a2c5011-86de-4896-b02b-0db92a319634.png)
 
-![iPad, Nexus 9 – 3](https://user-images.githubusercontent.com/39066351/138397579-6ec1cd88-c52b-4632-b6ed-013d2c74899e.png)
+![image](https://user-images.githubusercontent.com/39066351/138398110-23669688-5bc5-4162-b494-374430626526.png)
 
-![iPad, Nexus 9 – 4](https://user-images.githubusercontent.com/39066351/138397582-e3cacfd9-403f-46c4-8549-f29f5fbc5b3f.png)
-
-![iPhone 12 Pro Max – 1](https://user-images.githubusercontent.com/39066351/138397585-5f3b913c-72d6-4174-b314-9db2ea477219.png)
-
-![iPhone 12 Pro Max – 2](https://user-images.githubusercontent.com/39066351/138397588-c5111142-4601-418c-a096-0fc9ecf30c3c.png)
-
-![iPhone 12 Pro Max – 3](https://user-images.githubusercontent.com/39066351/138397590-bf67fd63-021b-42c8-975f-e15d633be81a.png)
 
 Thanks for see mi repo :D!!!
 I'll let you these step you can use to clone it! 
