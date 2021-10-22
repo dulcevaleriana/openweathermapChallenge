@@ -1,0 +1,358 @@
+/*Web*/
+@media only screen and (min-width: 992px) {
+
+}
+
+/*Tablet*/
+@media only screen and (max-width: 992px){
+    .class-ContactUs{
+        grid-template-columns: calc(60% - 5px) calc(40% - 5px);
+    }
+    .class-Card {
+        grid-template-columns: auto auto auto;
+        height: 70px;
+    }
+    .class-Card h3{
+        grid-column: 1 / span 3;
+    }
+    .class-home > div:last-child {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        grid-template-rows: 110px 110px 110px;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(3) {
+        top: 10vh;
+        left: 13vw;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(1) {
+        top: 3vh;
+    }
+}
+
+/*iPad, Nexus 9 – 1*/
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+    body div#root {
+        grid-template-rows: 70px 40px calc(100vh - 130px - 110px) 130px;
+    }
+    .class-menu {
+        padding: 0 50px;
+        grid-template-columns: 50px auto;
+        align-items: center;
+    }
+    .class-menu svg {
+        font-size: 25pt;
+        display: flex !important;
+        align-items: center;
+        color: #0049a5;
+    }
+    .class-menu ul {
+        display: none;
+    }
+    ul.class-menu-smartphone {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 50vw;
+        bottom: 0;
+        z-index: 3;
+        background: #4c9cfe;
+    }
+    .class-menu ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15pt;
+        color: #b2e1fe !important;
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 10px 50px;
+        border-bottom: 5px solid #b2e1fe;
+        height: 70px;
+    }
+    .class-menu ul li a.active, .class-menu ul li a.active svg {
+        color: #ffffff !important;
+    }
+    .class-menu ul li svg {
+        color: #b2e1fe;
+    }
+    .class-menu img {
+        height: 70px;
+        width: auto;
+    }
+    .class-bg-menu-smartphone {
+        background: #0049a59c;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .class-Header {
+        font-size: 15pt;
+        padding: 0 50px;
+    }
+    .class-home {
+        grid-template-rows: 50px calc(40% - 50px) calc(60% - 50px);
+        grid-template-columns: auto;
+        padding: 0 50px;
+        align-items: center;
+    }
+    .class-home > div:first-child {
+        grid-column: 1;
+    }
+    .class-home .class-wellcomeMessage {
+        justify-content: flex-start;
+    }
+    .class-home .class-SunAnimated .class-sun {
+        position: absolute;
+        left: calc(50% - 75px);
+        top: calc(50% - 75px);
+    }
+    .class-home > div:nth-child(2) > div:last-child {
+        bottom: 0;
+        top: -5px;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(3) {
+        top: 5vh;
+        left: 43vw;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(1) {
+        top: -3vh;
+        left: 23vw;
+    }
+    .class-home .class-SunAnimated .class-sun.class-sunDown {
+        top: calc(64vh - 120px);
+    }
+    .class-ContactUs {
+        grid-template-columns: auto;
+        padding: 0 50px;
+    }
+    .class-ContactUs h1 {
+        grid-column: 1;
+    }
+    .class-ContactUs .class-SunAnimated {
+        display: none;
+    }
+    .class-ContactUs form {
+        grid-template-rows: 50px 50px calc(80% - 120px);
+    }
+    .class-footer .class-mountain:nth-child(2),
+    .class-footer .class-mountain:nth-child(3),
+    .class-footer .class-mountain:nth-child(4) {
+        display: none;
+    }
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        justify-content: center;
+    }
+    .class-home > div:nth-child(2) > div:last-child {
+        width: 100%;
+        top: -6vh;
+        text-align: center;
+    }
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        justify-content: center;
+        font-size: 70pt;
+    }
+    .class-home > div:nth-child(2) > div:last-child h5 {
+        font-size: 20pt;
+    }
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 600px){
+    .class-AboutUs{
+        grid-template-rows: 80px auto;
+    }
+}
+
+@media only screen and (max-width: 540px) and (max-height: 720px){
+    .class-home > div:nth-child(2) > div:last-child {
+        top: -8vh;
+        display: grid;
+        grid-template-columns: 109px auto;
+        grid-gap: 0 10px;
+        text-align: left;
+    }
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        grid-row: 1/span 2;
+        font-size: 40pt;
+    }
+}
+
+/*Mini Smartphone*/
+@media only screen and (max-width: 500px) {
+    .class-menu ul li a {
+        padding: 10px 0px 10px 20px;
+    }
+    .class-menu,
+    .class-Header,
+    .class-ContactUs,
+    .class-home {
+        padding: 0 20px;
+    }
+    .class-footer > div:last-child{
+        padding: 10px 20px;
+    }
+    body div#root {
+        grid-template-rows: 70px 50px calc(100vh - 130px - 90px) 99px;
+    }
+    .class-home > div:first-child {
+        grid-template-columns: auto;
+        position: relative;
+    }
+    .class-home > div:first-child input {
+        border-radius: 1000px;
+    }
+    .class-home > div:first-child button{
+        position: absolute;
+        right: 0;
+        width: 50px;
+        border-radius: 1000px;
+    }
+    .class-home > div:first-child button span{
+        display: none;
+    }
+    .class-home {
+        grid-template-rows: 50px calc(50% - 50px) calc(50% - 50px);
+    }
+    .class-home > div:last-child {
+        margin-right: -20px;
+        padding-right: 20px;
+        height: 40vh;
+        align-self: flex-start;
+        z-index: 3;
+        overflow-y: auto;
+    }
+    .class-home > div:nth-child(2) > div:last-child {
+        top: -12vh;
+    }
+    ul.class-menu-smartphone {
+        z-index: 5;
+    }
+    .class-bg-menu-smartphone {
+        z-index: 4;
+    }
+    .class-home .class-SunAnimated .class-sun {
+        position: absolute;
+        left: calc(50% - 125px);
+        top: calc(50% - 125px);
+        width: 250px;
+        height: 250px;
+    }
+    .class-SunAnimated .class-cloud-small {
+        width: 240px;
+        height: 90px;
+    }
+    .class-SunAnimated .class-cloud-small:before {
+        width: 110px;
+        height: 110px;
+        top: -65px;
+        right: 25px;
+    }
+    .class-SunAnimated .class-cloud-small:after {
+        width: 100px;
+        height: 100px;
+        top: -45px;
+        left: 35px;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(1) {
+        top: -7vh;
+        left: -10vw;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(3) {
+        top: 5vh;
+        left: 55vw;
+    }
+    .class-ContactUs form > div:last-child button {
+        width: 50px;
+    }
+    .class-ContactUs form > div:last-child button span{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .class-home {
+        grid-template-rows: 50px calc(50% - 50px) calc(64% - 50px);
+    }
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        font-size: 50pt;
+    }
+    .class-home > div:nth-child(2) > div:last-child h5 {
+        font-size: 15pt;
+    }
+    .class-Header {
+        font-size: 12pt;
+    }
+    ul.class-menu-smartphone {
+        right: 20vw;
+    }
+    .class-home > div:last-child {
+        grid-template-rows: 130px 130px 130px;
+    }
+    .class-Card {
+        grid-template-columns: auto auto;
+        height: 90px;
+    }
+    .class-Card h3 {
+        grid-column: 1 / span 2;
+    }
+    .class-ContactUs h1 {
+        font-size: 17pt;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        font-size: 55pt;
+    }
+    .class-home > div:nth-child(2) > div:last-child h5 {
+        font-size: 15pt;
+    }
+    .class-footer > div:last-child {
+        padding: 10px 20px;
+    }
+    .class-home > div:last-child {
+        grid-template-rows: 160px 160px 160px;
+    }
+    .class-Card {
+        grid-template-columns: auto;
+        height: 120px;
+    }
+    .class-Card h3 {
+        grid-column: 1;
+    }
+    .class-Header {
+        font-size: 10pt;
+    }
+    .class-ContactUs h1 {
+        font-size: 14.5pt;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .class-wellcomeMessage {
+        overflow-y: hidden !important;
+    }
+    .class-wellcomeMessage h2{
+        font-size: 15pt;
+    }
+    .class-home > div:nth-child(2) > div:last-child {
+        top: -8vh;
+        display: grid;
+        grid-template-columns: 109px auto;
+        grid-gap: 0 10px;
+        text-align: left;
+    }
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        grid-row: 1 / span 2;
+    }
+}
+
+/*safari style MAC IPHONE IOS*/
+@supports (-webkit-hyphens:none){
+    @media only screen and (max-width: 992px) {
+
+    }
+}
