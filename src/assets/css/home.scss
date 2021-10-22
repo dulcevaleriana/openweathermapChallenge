@@ -2,8 +2,17 @@
     display: grid;
     grid-template-columns: 40% 60%;
     padding: 0 84px;
+    grid-template-rows: 50px auto;
+    grid-gap: 10px;
 
     > div:first-child{
+        display: grid;
+        grid-column: 2;
+        grid-template-columns: calc(80% - 5px) calc(20% - 5px);
+        grid-gap: 10px;
+    }
+
+    > div:nth-child(2){
         position: relative;
 
         > div:last-child{
@@ -64,18 +73,8 @@
 
     > div:last-child{
         display: grid;
-        grid-template-columns: calc(80% - 5px) calc(20% - 5px);
-        grid-template-rows: 50px auto;
+        grid-template-columns: calc(33% - 5px) calc(33% - 5px) calc(33% - 5px);
         grid-gap: 10px;
-
-        > div:last-child{
-            display: grid;
-            grid-column: 1/span 2;
-            grid-gap: 10px;
-            overflow-y: auto;
-            height: calc(100% - 60px);
-            grid-template-columns: calc(33% - 5px) calc(33% - 5px) calc(33% - 5px);
-        }
     }
 
     .class-sun.class-sunDown {

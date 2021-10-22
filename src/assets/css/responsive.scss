@@ -4,37 +4,136 @@
 }
 
 /*Tablet*/
-@media only screen and (max-width: 992px),(width: 1024px) and (height: 1366px) {
+@media only screen and (max-width: 992px){
     .class-ContactUs{
         grid-template-columns: calc(60% - 5px) calc(40% - 5px);
     }
-
-    .class-home > div:last-child > div:last-child {
-        grid-template-columns: auto;
-    }
-
     .class-Card {
         grid-template-columns: auto auto auto;
         height: 70px;
     }
-
     .class-Card h3{
         grid-column: 1 / span 3;
     }
-
-    .class-home > div:last-child > div:last-child{
-        height: 100%;
-        padding-right: 5px;
+    .class-home > div:last-child {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        grid-template-rows: 110px 110px 110px;
     }
-
-    .class-home > div:first-child > div:last-child {
-        width: 60%;
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(3) {
+        top: 10vh;
+        left: 13vw;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(1) {
+        top: 3vh;
     }
 }
 
-/*Tablet 2*/
-@media only screen and (width: 1024px) and (height: 1366px) {
-
+/*iPad, Nexus 9 – 1*/
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+    body div#root {
+        grid-template-rows: 70px 40px calc(100vh - 130px - 110px) 130px;
+    }
+    .class-menu {
+        padding: 0 50px;
+        grid-template-columns: 50px auto;
+        align-items: center;
+    }
+    .class-menu svg {
+        font-size: 25pt;
+        display: flex !important;
+        align-items: center;
+        color: #0049a5;
+    }
+    .class-menu ul {
+        display: none;
+    }
+    ul.class-menu-smartphone {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 50vw;
+        bottom: 0;
+        z-index: 3;
+        background: #4c9cfe;
+    }
+    .class-menu ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15pt;
+        color: #b2e1fe !important;
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 10px 50px;
+        border-bottom: 5px solid #b2e1fe;
+        height: 70px;
+    }
+    .class-menu ul li a.active, .class-menu ul li a.active svg {
+        color: #ffffff !important;
+    }
+    .class-menu ul li svg {
+        color: #b2e1fe;
+    }
+    .class-menu img {
+        height: 70px;
+        width: auto;
+    }
+    .class-bg-menu-smartphone {
+        background: #0049a59c;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .class-Header {
+        font-size: 15pt;
+        padding: 0 50px;
+    }
+    .class-home {
+        grid-template-rows: 50px calc(40% - 50px) calc(60% - 50px);
+        grid-template-columns: auto;
+        padding: 0 50px;
+        align-items: center;
+    }
+    .class-home > div:first-child {
+        grid-column: 1;
+    }
+    .class-home .class-wellcomeMessage {
+        justify-content: flex-start;
+    }
+    .class-home .class-SunAnimated .class-sun {
+        position: absolute;
+        left: calc(50% - 75px);
+        top: calc(50% - 75px);
+    }
+    .class-home > div:nth-child(2) > div:last-child {
+        bottom: 0;
+        top: -5px;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(3) {
+        top: 5vh;
+        left: 43vw;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(1) {
+        top: -3vh;
+        left: 23vw;
+    }
+    .class-home .class-SunAnimated .class-sun.class-sunDown {
+        top: calc(64vh - 120px);
+    }
+    .class-ContactUs {
+        grid-template-columns: auto;
+        padding: 0 50px;
+    }
+    .class-ContactUs h1 {
+        grid-column: 1;
+    }
+    .class-ContactUs .class-SunAnimated {
+        display: none;
+    }
 }
 
 /*Smartphone*/

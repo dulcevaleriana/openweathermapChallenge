@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {getWeatherData} from '../dataWeather/getWeatherData';
+import {getWeatherData} from '../js/getWeatherData';
 import {ScaleLoader} from 'react-spinners';
 import SunAnimated from '../components/sunAnimated';
 import Card from '../components/card';
@@ -45,6 +45,12 @@ const Home = () => {
     return(
         <div className="class-home">
           <div>
+            <input onChange={(a) => setCity(a.target.value)} type="text" placeholder="Write what weather country do you want to know"/>
+            <button onClick={() => {getData();setstartSearch(true)}} type="button">
+              <FontAwesomeIcon icon={faSearch} /> search
+            </button>
+          </div>
+          <div>
           <SunAnimated startSearch={startSearch}/>
           {weatherdata && (
               <div>
@@ -54,11 +60,6 @@ const Home = () => {
               </div>
           )}
           </div>
-          <div>
-            <input onChange={(a) => setCity(a.target.value)} type="text" placeholder="Write what weather country do you want to know"/>
-            <button onClick={() => {getData();setstartSearch(true)}} type="button">
-              <FontAwesomeIcon icon={faSearch} /> search
-            </button>
             {startSearch ? (
               <>
               {loading ? (
@@ -147,7 +148,6 @@ const Home = () => {
                 <h2>Wellcome to OWPC, <br/> Find the climate of any part of the world here !!</h2>
               </div>
             )}
-          </div>
       </div>
     )
 }
