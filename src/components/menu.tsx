@@ -31,7 +31,7 @@ const Menu = (props:any) => {
                     </li>
                 )}
             </ul>
-            {activeMenu && (<div className="class-bg-menu-smartphone"/>)}
+            {activeMenu && (<div className="class-bg-menu-smartphone" onClick={() => setActiveMenu(false)}/>)}
         </div>
     )
 }

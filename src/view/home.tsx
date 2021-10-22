@@ -47,7 +47,7 @@ const Home = () => {
           <div>
             <input onChange={(a) => setCity(a.target.value)} type="text" placeholder="Write what weather country do you want to know"/>
             <button onClick={() => {getData();setstartSearch(true)}} type="button">
-              <FontAwesomeIcon icon={faSearch} /> search
+              <FontAwesomeIcon icon={faSearch} /> <span>search</span>
             </button>
           </div>
           <div>

@@ -134,16 +134,172 @@
     .class-ContactUs .class-SunAnimated {
         display: none;
     }
+    .class-ContactUs form {
+        grid-template-rows: 50px 50px calc(80% - 120px);
+    }
+    .class-footer .class-mountain:nth-child(2),
+    .class-footer .class-mountain:nth-child(3),
+    .class-footer .class-mountain:nth-child(4) {
+        display: none;
+    }
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        justify-content: center;
+    }
+    .class-home > div:nth-child(2) > div:last-child {
+        width: 100%;
+        top: -6vh;
+        text-align: center;
+    }
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        justify-content: center;
+        font-size: 70pt;
+    }
+    .class-home > div:nth-child(2) > div:last-child h5 {
+        font-size: 20pt;
+    }
 }
 
 /*Smartphone*/
-@media only screen and (max-width: 700px) {
-
+@media only screen and (max-width: 600px) {
+    .class-AboutUs{
+        grid-template-rows: 80px auto;
+    }
 }
 
 /*Mini Smartphone*/
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 500px) {
+    .class-menu ul li a {
+        padding: 10px 0px 10px 20px;
+    }
+    .class-menu,
+    .class-Header,
+    .class-ContactUs,
+    .class-home {
+        padding: 0 20px;
+    }
+    .class-footer > div:last-child{
+        padding: 20px;
+    }
+    body div#root {
+        grid-template-rows: 70px 50px calc(100vh - 130px - 120px) 130px;
+    }
+    .class-Header {
+        font-size: 18pt;
+    }
+    .class-home > div:first-child {
+        grid-template-columns: auto;
+        position: relative;
+    }
+    .class-home > div:first-child input {
+        border-radius: 1000px;
+    }
+    .class-home > div:first-child button{
+        position: absolute;
+        right: 0;
+        width: 50px;
+        border-radius: 1000px;
+    }
+    .class-home > div:first-child button span{
+        display: none;
+    }
+    .class-home {
+        grid-template-rows: 50px calc(50% - 50px) calc(50% - 50px);
+    }
+    .class-home > div:last-child {
+        margin-right: -20px;
+        padding-right: 20px;
+        height: 44vh;
+        align-self: flex-start;
+        z-index: 3;
+        overflow-y: auto;
+    }
+    .class-home > div:nth-child(2) > div:last-child {
+        top: -12vh;
+    }
+    ul.class-menu-smartphone {
+        z-index: 5;
+    }
+    .class-bg-menu-smartphone {
+        z-index: 4;
+    }
+    .class-home .class-SunAnimated .class-sun {
+        position: absolute;
+        left: calc(50% - 125px);
+        top: calc(50% - 125px);
+        width: 250px;
+        height: 250px;
+    }
+    .class-SunAnimated .class-cloud-small {
+        width: 240px;
+        height: 90px;
+    }
+    .class-SunAnimated .class-cloud-small:before {
+        width: 110px;
+        height: 110px;
+        top: -65px;
+        right: 25px;
+    }
+    .class-SunAnimated .class-cloud-small:after {
+        width: 100px;
+        height: 100px;
+        top: -45px;
+        left: 35px;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(1) {
+        top: -7vh;
+        left: -10vw;
+    }
+    .class-home .class-SunAnimated > .class-cloud.class-cloud-small:nth-child(3) {
+        top: 5vh;
+        left: 55vw;
+    }
+}
 
+@media only screen and (max-width: 400px) {
+    .class-Header {
+        font-size: 15pt;
+    }
+    ul.class-menu-smartphone {
+        right: 20vw;
+    }
+    .class-home > div:last-child {
+        grid-template-rows: 130px 130px 130px;
+    }
+    .class-Card {
+        grid-template-columns: auto auto;
+        height: 90px;
+    }
+    .class-Card h3 {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .class-home > div:nth-child(2) > div:last-child h1 {
+        font-size: 65pt;
+    }
+    .class-home > div:nth-child(2) > div:last-child h5 {
+        font-size: 18pt;
+    }
+    .class-footer > div:last-child {
+        padding: 10px 20px;
+    }
+    .class-home > div:last-child {
+        grid-template-rows: 160px 160px 160px;
+    }
+    .class-Card {
+        grid-template-columns: auto;
+        height: 120px;
+    }
+    .class-Card h3 {
+        grid-column: 1;
+    }
+    .class-Header {
+        font-size: 10pt;
+    }
+    .class-ContactUs h1 {
+        font-size: 14.5pt;
+    }
 }
 
 /*safari style MAC IPHONE IOS*/

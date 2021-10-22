@@ -9,6 +9,7 @@ body{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 50px 30px calc(100vh - 130px - 80px) 130px;
+        overflow: hidden;
     }
 
     input {
@@ -75,4 +76,8 @@ span.css-1xdhyk6 {
         height: 49px;
         margin: 3px;
     }
+}
+
+html {
+    overflow: hidden;
 }
