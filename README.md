@@ -1,3 +1,32 @@
+# Wellcome to "openweathermapchallenge"
+This challengue was made to the proporse to be part of GlowTouch's Team,
+It about find the weather of any country around the world using api.openweathermapchallenge.com
+
+if you clone this repo well, you can see the final view like this:
+
+![Home](https://user-images.githubusercontent.com/39066351/138397551-975181b3-a66f-455e-a360-d00df85a3d65.png)
+
+![Home – 1](https://user-images.githubusercontent.com/39066351/138397554-94dbcb78-8e91-46a2-a68c-f749fbf88151.png)
+
+![Home – 2](https://user-images.githubusercontent.com/39066351/138397562-fcafd8b3-a06e-4bfe-87e2-4638d36f5a44.png)
+
+![iPad, Nexus 9 – 1](https://user-images.githubusercontent.com/39066351/138397576-849bcfb5-42a7-41ed-b297-96f65b986a41.png)
+
+![iPad, Nexus 9 – 2](https://user-images.githubusercontent.com/39066351/138397577-88c1197b-5ce4-4326-b0b7-aa4be3151e75.png)
+
+![iPad, Nexus 9 – 3](https://user-images.githubusercontent.com/39066351/138397579-6ec1cd88-c52b-4632-b6ed-013d2c74899e.png)
+
+![iPad, Nexus 9 – 4](https://user-images.githubusercontent.com/39066351/138397582-e3cacfd9-403f-46c4-8549-f29f5fbc5b3f.png)
+
+![iPhone 12 Pro Max – 1](https://user-images.githubusercontent.com/39066351/138397585-5f3b913c-72d6-4174-b314-9db2ea477219.png)
+
+![iPhone 12 Pro Max – 2](https://user-images.githubusercontent.com/39066351/138397588-c5111142-4601-418c-a096-0fc9ecf30c3c.png)
+
+![iPhone 12 Pro Max – 3](https://user-images.githubusercontent.com/39066351/138397590-bf67fd63-021b-42c8-975f-e15d633be81a.png)
+
+Thanks for see mi repo :D!!!
+I'll let you these step you can use to clone it! 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
